@@ -1,6 +1,6 @@
 # Dad-Jokes
 
-Dad-Jokes is a fun web app built with HTML, CSS and Javascript that generates Random Programming Dad jokes to make you laugh.
+Dad-Jokes is a fun and interactive web app built with HTML, CSS and Javascript that generates Random Programming Dad jokes to make you laugh.
 <br><br><br>
 ## Key Concepts
 
