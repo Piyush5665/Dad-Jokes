@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    background-image: linear-gradient(45deg,
+            #ffbe0b,
+            #fb5607,
+            #8338ec,
+            #ff006e,
+            #3a86ff);
+
+    background-size: 700%;
+
+    animation-name: colors;
+    background-position: center center;
+    background-attachment: fixed;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-duration: 10s;
+
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 100%;
+    height: 80vh;
+    align-items: center;
+}
+
+@keyframes colors {
+    0% {
+        background-position: left;
+    }
+
+    100% {
+        background-position: right;
+    }
+}
+
+.container {
+
+    border-radius: 24px;
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    margin-inline: auto;
+    color: white;
+
+    padding-block: 40px;
+    padding-inline: 15px;
+
+    max-width: 600px;
+
+    transition: 0.5s;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+    animation-name: top-fade;
+    animation-duration: 1s;
+
+
+    font-family: cursive;
+    font-size: 1.3rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+
+    transition: 0.3s;
+
+}
+
+.emoji {
+    font-size: 120px;
+    color: #fab22e;
+    margin-bottom: 10px;
+
+}
+
+.joke {
+    text-align: center;
+    margin-inline: 20px;
+    font-weight: 700;
+}
+
+
+@keyframes top-fade {
+    0% {
+        opacity: 0%;
+        margin-bottom: 200px;
+    }
+
+    100% {
+        opacity: 100%;
+        margin-bottom: 0px;
+    }
+}
+
+
+#btn {
+    margin-top: 30px;
+    border: 0.5px solid white;
+    padding-block: 10px;
+    padding-inline: 28px;
+    border-radius: 4px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    transition: transform 0.3s;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 8px 8px;
+}
+
+
+#btn:hover {
+    transform: scale(0.9);
+    color: black;
+    background-color: #fab22e;
+    border: none;
+    cursor: pointer;
+}
+
+#btn:active {
+    transform: scale(1.1);
+    background-color: #ef233c;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 20px 8px;
+    border: none;
+}
+
+h1{
+    color: white;
+    font-size: 3rem;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 20px;
+}
